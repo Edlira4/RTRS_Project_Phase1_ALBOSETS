@@ -146,7 +146,7 @@ Submission Deadline: 04.03.2023, 23:59 hours.
 - Regular security audits and compliance with industry standards (e.g., OWASP) ensure data protection and privacy compliance.
 
   # Deadline
-Submission Deadline: 04.03.2023, 23:59 hours.
+Submission Deadline: 18.03.2023, 23:59 hours.
 
 # Additional Notes
 [Please note that additional information and updates may be added to the provided project details as the development process progresses. Kindly stay tuned for further updates and enhancements to the project scope and implementation details]
