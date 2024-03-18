@@ -46,7 +46,9 @@ No other members, group made of 1 person.
 Submission Deadline: 04.03.2023, 23:59 hours.
 
 # Additional Notes
-[Please note that additional information and updates may be added to the provided project details as the development process progresses. Kindly stay tuned for further updates and enhancements to the project scope and implementation details]**Phase II: User Requirements and Application Specifications**
+[Please note that additional information and updates may be added to the provided project details as the development process progresses. Kindly stay tuned for further updates and enhancements to the project scope and implementation details]
+
+**Phase II: User Requirements and Application Specifications**
 
 **1. Chosen Development Model:**
 - **Agile**
@@ -143,3 +145,8 @@ Submission Deadline: 04.03.2023, 23:59 hours.
 - Multi-factor authentication (MFA) options, including biometric authentication, are available for enhanced user security.
 - Regular security audits and compliance with industry standards (e.g., OWASP) ensure data protection and privacy compliance.
 
+  # Deadline
+Submission Deadline: 04.03.2023, 23:59 hours.
+
+# Additional Notes
+[Please note that additional information and updates may be added to the provided project details as the development process progresses. Kindly stay tuned for further updates and enhancements to the project scope and implementation details]
