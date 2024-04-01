@@ -150,3 +150,39 @@ Submission Deadline: 18.03.2023, 23:59 hours.
 
 # Additional Notes
 [Please note that additional information and updates may be added to the provided project details as the development process progresses. Kindly stay tuned for further updates and enhancements to the project scope and implementation details]
+
+# Phase III: Software Design and Modeling
+
+# Group Name: ALBOSETS
+
+Software Architecture
+System Architecture:
+The Albanian Railway Ticket Reservation System follows a microservices architecture, allowing for modularity, scalability, and flexibility. It comprises several interconnected components, including frontend clients, microservices for user management, booking, payment processing, and a centralized database. Each microservice is containerized using Docker for efficient deployment and management. Kubernetes orchestrates these containers, ensuring fault tolerance and high availability.
+
+Component Diagram:
+[Diagram illustrating the different components of the system and their interactions.]
+
+Detailed Design
+Class Diagram:
+[Class diagram showcasing the relationships and attributes of various classes within the application, such as User, Train, Booking, Payment, etc.]
+
+Sequence Diagrams:
+[Sequence diagrams illustrating the step-by-step interactions between different components to accomplish tasks like user registration, train booking, payment processing, etc.]
+
+Database Design:
+The relational database model utilizes PostgreSQL to organize the application's data efficiently. Tables include User, Train, Booking, Payment, and Customer Support Interactions, with appropriate foreign key constraints to maintain data integrity. Indexing is implemented to improve query performance, ensuring optimal database operations.
+
+Modeling
+Use Case Diagram:
+[Use case diagram depicting the different interactions and functionalities available to end-users, clients, and developers within the system.]
+
+Activity Diagrams:
+[Activity diagrams outlining the flow of activities for various tasks, such as searching for trains, booking tickets, making payments, etc.]
+
+State Diagrams:
+[State diagrams illustrating the different states that objects within the system can transition between, such as the states of a booking process or user authentication.]
+
+Additional Notes
+- All diagrams are properly labeled and formatted for clarity and easy understanding.
+- Detailed explanations and annotations accompany each diagram to provide further insight into the system's design and functionality.
+- The submission deadline for Phase III is April 1st, 2024, 23:59 hours.
