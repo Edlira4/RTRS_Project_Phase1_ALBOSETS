@@ -186,3 +186,74 @@ Additional Notes
 - All diagrams are properly labeled and formatted for clarity and easy understanding.
 - Detailed explanations and annotations accompany each diagram to provide further insight into the system's design and functionality.
 - The submission deadline for Phase III is April 1st, 2024, 23:59 hours.
+## 1. Introduction to Testing:
+
+Software testing is the process of evaluating software to identify defects or bugs. It involves executing software components or systems to compare actual results with expected results and ensure that they meet specified requirements. Testing is crucial in software development for ensuring reliability and correctness, as it helps to detect and fix defects early in the development lifecycle, reducing the cost and effort of fixing them later.
+
+## 2. Purpose of Testing:
+
+Testing aims to identify defects early in the development process and verify that software components perform as intended. It helps in validating that the software meets the specified requirements, ensuring its reliability, functionality, and performance. By testing software comprehensively, developers can deliver high-quality products that meet user expectations and contribute to customer satisfaction.
+
+## 3. Focus on Testing a Single Component:
+
+For this assignment, we will focus on testing the `BookingService` module of the Albanian Railway Ticket Reservation System. This component is critical as it handles the core functionality of booking tickets, managing seat availability, and processing payments. Testing this module is important to ensure that it functions correctly, handles various scenarios effectively, and contributes to the overall reliability of the system.
+
+## 4. Preparing Test Cases:
+
+To prepare comprehensive test cases for the `BookingService` module, we need to cover various scenarios, including:
+- Normal inputs: Valid booking requests under standard conditions.
+- Edge cases: Unusual scenarios such as booking when seats are almost full.
+- Invalid inputs: Testing the system's response to invalid inputs, such as incomplete booking details or negative fares.
+
+## 5. Choosing Testing Frameworks:
+
+For testing the `BookingService` module in the Node.js environment, we recommend using Jest, a popular testing framework for JavaScript. Jest offers a simple yet powerful testing experience, including support for assertions, mocking, and code coverage analysis. To set up the testing environment with Jest, you can install it using npm:
+
+```
+npm install --save-dev jest
+```
+
+Then, you can configure Jest by adding a `jest.config.js` file to your project directory with the necessary configuration options.
+
+## 6. Writing Test Code:
+
+To write test code for the `BookingService` module, we'll create test methods to exercise different functionalities. We'll use Jest's test function to define individual test cases, providing examples of assertions to validate expected outcomes. Here's an example of how to write test code for booking a ticket successfully:
+
+```javascript
+test('should book a ticket successfully', () => {
+  // Mocking data
+  const bookingDetails = {
+    userId: 'user123',
+    trainId: 'train456',
+    seatNumber: 'A12',
+    departureTime: '2024-05-15T08:00:00',
+    fare: 25.0
+  };
+
+  // Perform booking
+  const bookingResult = bookingService.bookTicket(bookingDetails);
+
+  // Assert booking success
+  expect(bookingResult.success).toBe(true);
+  expect(bookingResult.message).toBe('Ticket booked successfully.');
+});
+```
+
+## 7. Running Tests:
+
+To execute tests written with Jest, you can run the following command in your terminal:
+
+```
+npx jest
+```
+
+This command will execute all test files in your project and provide outputs indicating which tests passed, which failed, and any errors encountered during execution. You can interpret the results to ensure that the `BookingService` module behaves as expected under different scenarios.
+
+## 8. Test Coverage:
+
+Achieving high test coverage is essential to ensure thorough testing of the software. Test coverage measures the percentage of code that is executed by the test suite. By aiming for high test coverage, developers can identify areas of the codebase that may require additional testing and ensure that all critical functionalities are adequately tested.
+
+---
+
+By following these steps, you can effectively test the `BookingService` module of the Albanian Railway Ticket Reservation System and ensure its reliability and correctness.
+06/05/2024
